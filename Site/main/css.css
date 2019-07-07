@@ -1,0 +1,142 @@
+/*GLOBAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*IMAGEM*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  padding-top: 100px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*NAVBAR*/
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  ul {
+    float: right;
+  }
+  
+  ul a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: rgb(41, 125, 62);
+    text-align: center;
+    padding: 30px 45px;
+    text-decoration: none;
+  }
+
+  .logo{
+    margin-left: 5px;
+    padding-top: 10px;
+  }
+/*SOBRE NÓS*/
+#sobre_nos{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px !important;
+  width: 100%;
+  height: 650px;
+  background-color: rgb(41, 125, 62);
+}
+
+.sobre_nos_h1{
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.sobre_nos_text{
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+/*SERVIÇOS*/
+#servicos{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  background-color: rgb(147, 182, 53)
+}
+
+.servicos_h1{
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.bike_energy{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.gear_energy{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+/*CONTACTOS*/
+
+#contactos{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(64, 111, 240)
+}
+.esquerda{
+  color: white;
+}
+
+.centro{
+  color: white;
+  text-align: center;
+}
+
+.direita{
+  color: white;
+  text-align: right;
+}

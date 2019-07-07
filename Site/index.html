@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main/css.css">
+    <title>leaf energy</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a><img class="logo" src="img/leaf energy.png" alt="leaf" height="60px" width="auto"></a>
+        <ul><a href="#contactos">CONTACTOS</a></ul>
+        <ul><a href="#servicos">SERVIÇOS</a></ul>
+        <ul><a href="#sobre_nos">SOBRE NÓS</a></ul>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/car sem.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/carro ele.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/carregar 2.jpg" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        
+    <section id="sobre_nos">
+            <br><br><br><br>
+        <h1 class="sobre_nos_h1">SOBRE NÓS</h1>
+        <p class="sobre_nos_text"> leaf energy é uma empresa que contribui para a preservação do ecossistema através do uso inteligente de transportes elétricos ou híbridos contribuindo assim para a redução de poluentes,<br> 
+            através do uso de automóveis, carrinhas e motas bastante usadas atualmente, principalmente nos meios urbanos e sobre as quais pouco se tem falado. <br>
+            Propomos atuar também sobre as máquinas agrícolas, outro campo onde não tem havido a atenção devida, como sejam tratores, ceifeiras e outros veículos usados na agricultura. <br>
+        </p>
+    </section>
+ 
+    <section id="servicos">
+        <h1 class="servicos_h1">SERVIÇOS</h1>
+
+        <div class="bike_energy"><img src="img/leaf bike.png" height="75px" width="auto"><br>As bicicletas elétricas têm sido uma das soluções de mobilidade sustentável, acabando por
+            contribuir para a melhoria do meio ambiente e da condição física.</div>
+
+        <div class="gear_energy"><img src="img/leaf gear.png" height="60px" width="auto"><br>Efetuamos todo o tipo de reparações e serviços:<br>
+            Revisão Automóvel, Substituição de Baterias, Polimento de Faróis, Focagem de Faróis,<br> 
+            Parafinagens, Travões  e outros.<br>
+             A manutenção de um carro elétrico é mais barato do que um carro a gasóleo ou gasolina,<br>
+            uma vez que estes não usam óleo do motor, filtros nem correntes.<br>
+            Muitas vezes, o carro elétrico trava com o motor para recarregar baterias, o que impede um <br>
+            desgaste tão acentuado das pastilhas dos travões.</div>
+    </section>
+    
+    <section id="contactos">
+        <div class="esquerda">
+        <h1 class="local">ENDEREÇO</h1><br>
+        <p>Rua Dr. José Alberto de Faria, 7<br>1500-351, Lisboa</p>
+        </div>
+        
+        <div class="centro">
+        <h1 class="tele">CONTACTO</h1><br>
+        <p>213 558 961</p>
+        </div>
+
+        <div class="direita">
+        <h1 class="mail">MAIL</h1>
+        <p>leafenergy@leafenergy.com</p>
+      </div>
+
+    </section>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000);
+        }
+        </script>
+
+</body>
+</html>
